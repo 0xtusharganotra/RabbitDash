@@ -1,12 +1,67 @@
-# React + Vite
+# RabbitDash
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**RabbitDash** is a fast, modern, and user-friendly **frontend admin dashboard** designed for managing e-commerce stores. Built entirely with **React.js**, **Vite**, and **Material UI**, it enables store owners to add, update, and manage products, categories, orders, and more — all from a clean and responsive interface.
 
-Currently, two official plugins are available:
+> ⚠️ This is a frontend-only project. You can connect it to any backend or headless CMS of your choice.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🛍️ Manage products, categories, and orders
+- 🖼️ Add/update/delete item details with UI forms
+- 📱 Fully responsive design (desktop + mobile)
+- ⚡ Lightning-fast performance using **Vite**
+- 🎨 Beautiful and accessible components with **Material UI**
+- 🧩 Modular architecture and reusable components
+- 🛠️ Easy to extend and integrate with any API
+
+---
+
+## 🛠 Tech Stack
+
+| Technology     | Description                              |
+|----------------|------------------------------------------|
+| **React.js**   | Library for building user interfaces     |
+| **Vite**       | Fast frontend tooling & dev server       |
+| **Material UI**| Elegant and accessible UI component kit  |
+
+---
+
+## 🧑‍💻 Getting Started
+
+### Prerequisites
+
+- Node.js (v16+)
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/rabbitdash.git
+
+# Navigate to the folder
+cd rabbitdash
+
+# Install dependencies
+npm install
+# or
+yarn install
+
+```
+### Run the Dev Server
+
+```bash
+
+npm run dev
+# or
+yarn dev
+```
+
+#### 🙌 Contributing
+Contributions and feedback are welcome!
+Please open an issue or submit a pull request for improvements, bug fixes, or new features.
+
+#### 📃 License
+This project is licensed under the MIT License.
