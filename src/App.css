@@ -7,6 +7,9 @@ body{
     background: rgb(224, 224, 250);
     width: 100vw;
     height: 100vh;
+    font-family:'Times New Roman', Times, serif !important;
+    text-transform: inherit !important;
+    
 }
 
 header{
@@ -94,3 +97,98 @@ height: 100%;
     align-items: center;
 }
 
+.dashboardcontainer{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    justify-content: center;
+    gap : 5px;
+}
+
+.sidebar{ width:100% fixed ; background: white; padding: 0px; border-radius :  5px; padding: 10px; height: calc(100vh - 100px);}
+
+.rightdashboardarea{
+   width: 100%;
+    background-color: white;
+    border-radius :  5px;
+    padding: 10px;
+
+}
+
+.sidebar ul{
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+.sidebar ul li{
+    list-style: none;
+    display: flex;
+   justify-content: center;
+    flex-direction: column;
+    padding-bottom: 5px;
+    opacity: 80%;
+
+}
+
+.sidebar ul li button{
+    justify-content: left;
+    color: black !important;
+    text-transform: inherit !important;
+    font-size: 17px !important;
+}
+
+.sidebar ul li button .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    border-radius: 0px;
+    padding-right: 5px;
+
+}
+
+.sidebar ul li button .icon svg{
+   font-size: 16px
+
+}
+
+.sidebar ul li button .arrow{
+
+   position: relative;
+    margin-left: auto;
+    right: 0;
+
+}
+
+.sidebar ul li button .arrow svg{
+
+   font-size: 20px;
+
+}
+
+.submenu li{
+    width: 100%;
+    list-style: none;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+
+.submenu li:hover{
+   font-size: black;
+   opacity: 100%;
+}
+
+.active{
+    display: block;
+}
+
+.close{
+    display: none;
+}
+
+.submenu li a{
+    text-decoration: none;
+    color: black;
+}
