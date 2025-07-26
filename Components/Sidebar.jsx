@@ -120,8 +120,9 @@ function Sidebar() {
           src="\src\assets\TAfT.gif"
           alt="Bottom GIF"
           style={{
-            width: "170px",
+            maxWidth: "170px",
             height: "auto",
+            width: "100%",
           }}
         />
       </div>

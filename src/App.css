@@ -1,194 +1,268 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-body{
-    background: rgb(224, 224, 250);
-    width: 100vw;
-    height: 100vh;
-    font-family:'Times New Roman', Times, serif !important;
-    text-transform: inherit !important;
-    
+body {
+  background: rgb(224, 224, 250);
+  width: 100vw;
+  height: 100vh;
+  font-family: "Times New Roman", Times, serif !important;
+  text-transform: inherit !important;
 }
 
-header{
-    width: 100%;
-    height: 70px;
-    background: white;
-    display: flex;
-    align-items: center;
+header {
+  width: 100%;
+  height: 70px;
+  background: white;
+  display: flex;
+  align-items: center;
 }
 
-.logo{
-    width: 60px;
-    height: auto;
+.logo {
+  width: 60px;
+  height: auto;
 }
 
-.container{
-max-width: 1500px;
-height: 100%;
+.container {
+  max-width: 1500px;
+  height: 100%;
 }
 
-.headercontainer{
-    display: flex;
-    height: 100%;
-    align-items: center;
-    gap: 20px;
+.headercontainer {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 20px;
 }
 
-
-
-.circle{
-    min-width: 40px !important;
-    width: 40px !important;
-    height: 40px !important;
-    background: rgb(224, 224, 250) !important;
-    border-radius: 100% !important;
+.circle {
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  background: rgb(224, 224, 250) !important;
+  border-radius: 100% !important;
 }
 
-.logocontainer{
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.logocontainer {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.circle svg{
-    font-size: 20px !important;
-    color: black !important;
+.circle svg {
+  font-size: 20px !important;
+  color: black !important;
 }
 
-.searchbox{
-    width: 350px;
-    height: 40px;
-    background:  rgb(224, 224, 250);
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    justify-content: space-between;
-    padding: 5px;
-    border-radius: 10px;
+.searchbox {
+  width: 350px;
+  height: 40px;
+  background: rgb(224, 224, 250);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 10px;
 }
 
-.search{
-    width: 50%;
+.search {
+  width: 50%;
 }
-.searchbox input{
-    border: none ;
-    padding: 7px;
-    width: 80%;
-    outline: none;
-    background: rgb(224, 224, 250);
-    margin-left: 5px;
-}
-
-.adminheader{
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    gap: 20px;
-    justify-content: center;
+.searchbox input {
+  border: none;
+  padding: 7px;
+  width: 80%;
+  outline: none;
+  background: rgb(224, 224, 250);
+  margin-left: 5px;
 }
 
-.adminloginheader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.adminheader {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  gap: 20px;
+  justify-content: center;
 }
 
-.dashboardcontainer{
-    display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-    justify-content: center;
-    gap : 5px;
+.adminloginheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.sidebar{ width:100% fixed ; background: white; padding: 0px; border-radius :  5px; padding: 10px; height: calc(100vh - 100px);}
-
-.rightdashboardarea{
-   width: 100%;
-    background-color: white;
-    border-radius :  5px;
-    padding: 10px;
-
+.dashboardcontainer {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  justify-content: center;
+  gap: 5px;
 }
 
-.sidebar ul{
-    margin-bottom: 0px;
-    padding-left: 0px;
+.sidebar {
+  width: 100% fixed;
+  background: white;
+  padding: 0px;
+  border-radius: 5px;
+  padding: 10px;
+  height: calc(100vh - 100px);
 }
 
-.sidebar ul li{
-    list-style: none;
-    display: flex;
-   justify-content: center;
-    flex-direction: column;
-    padding-bottom: 5px;
-    opacity: 80%;
+.rightdashboardarea {
+  width: 100%;
 
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.sidebar ul li button{
-    justify-content: left;
-    color: black !important;
-    text-transform: inherit !important;
-    font-size: 17px !important;
+.sidebar ul {
+  margin-bottom: 0px;
+  padding-left: 0px;
 }
 
-.sidebar ul li button .icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25px;
-    border-radius: 0px;
-    padding-right: 5px;
-
+.sidebar ul li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 5px;
+  opacity: 80%;
 }
 
-.sidebar ul li button .icon svg{
-   font-size: 16px
-
+.sidebar ul li button {
+  justify-content: left;
+  color: black !important;
+  text-transform: inherit !important;
+  font-size: 17px !important;
 }
 
-.sidebar ul li button .arrow{
-
-   position: relative;
-    margin-left: auto;
-    right: 0;
-
+.sidebar ul li button .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  border-radius: 0px;
+  padding-right: 5px;
 }
 
-.sidebar ul li button .arrow svg{
-
-   font-size: 20px;
-
+.sidebar ul li button .icon svg {
+  font-size: 16px;
 }
 
-.submenu li{
-    width: 100%;
-    list-style: none;
-    padding-left: 30px;
-    cursor: pointer;
+.sidebar ul li button .arrow {
+  position: relative;
+  margin-left: auto;
+  right: 0;
 }
 
-
-.submenu li:hover{
-   font-size: black;
-   opacity: 100%;
+.sidebar ul li button .arrow svg {
+  font-size: 20px;
 }
 
-.active{
-    display: block;
+.submenu li {
+  width: 100%;
+  list-style: none;
+  padding-left: 30px;
+  cursor: pointer;
 }
 
-.close{
-    display: none;
+.submenu li:hover {
+  font-size: black;
+  opacity: 100%;
 }
 
-.submenu li a{
-    text-decoration: none;
-    color: black;
+.active {
+  display: block;
+  transition: all 0.4s ease-in;
+}
+
+.close {
+  display: none;
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dashboardwrappewr {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.dashboardcontent {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.matrix {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.matrix-left {
+  width: 50%;
+}
+.matrix-right {
+  width: 50%;
+}
+
+.dashbox {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+
+  margin: 10px 0px;
+  background: #182b63;
+  background: linear-gradient(
+    90deg,
+    rgba(24, 43, 99, 1) 0%,
+    rgba(0, 92, 179, 1) 45%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-shadow: 3px 3px 3px 1px rgb(118, 118, 118);
+  cursor: pointer;
+  letter-spacing: 1.2px;
+}
+.dashchart {
+  width: 100%;
+  height: 95%;
+  border-radius: 10px;
+  color: white;
+  margin: 10px 0px;
+  background: #182b63;
+  background: linear-gradient(
+    90deg,
+    rgba(24, 43, 99, 1) 0%,
+    rgba(0, 92, 179, 1) 45%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding-left: 30px;
+  padding-top: 30px;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-shadow: 3px 3px 3px 1px rgb(118, 118, 118);
+  cursor: pointer;
+  line-height: 1.2;
+  letter-spacing: 1.2px;
 }
