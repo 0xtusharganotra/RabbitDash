@@ -1,5 +1,5 @@
 import { useState } from "react";
-import OrderCard from "./OrderCard";
+import OrderTable from "./OrderTable/";
 import LineChart from "./salechart";
 
 function Rightdashboardcontent() {
@@ -41,9 +41,9 @@ function Rightdashboardcontent() {
             </div>
           </div>
         </div>
-        <div className="lastorders p-3">
+        <div className="lastorders p-3 mt-3">
           <h4>Recent Orders</h4>
-          <OrderCard />
+          <OrderTable />
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ import Searchbox from "./searchbox";
 import { MdOutlineLightMode } from "react-icons/md";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import { IoMdHelp } from "react-icons/io";
 
 import Tooltip from "@mui/material/Tooltip";
 
@@ -16,7 +17,23 @@ import React from "react";
 import Box from "@mui/material/Box";
 import { useState } from "react";
 
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
+
 function Header() {
+  const [dialogueopen, setdialogueopen] = React.useState(false);
+
+  const handledialogueClickOpen = () => {
+    setdialogueopen(true);
+  };
+
+  const handlediaogueClose = () => {
+    setdialogueopen(false);
+  };
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -38,14 +55,28 @@ function Header() {
               <MdMenuOpen />
             </Button>
           </div>
-          <div className="search">
-            <Searchbox />
-          </div>
+          <div className="search">{/* <Searchbox /> */}</div>
 
           <div className="adminheader">
-            <Button className="circle">
-              <MdOutlineLightMode />
+            <Button className="circle" onClick={handledialogueClickOpen}>
+              <IoMdHelp />
             </Button>
+            <Dialog
+              open={dialogueopen}
+              onClose={handlediaogueClose}
+              aria-labelledby="alert-dialog-title"
+              aria-describedby="alert-dialog-description"
+            >
+              <DialogContent>
+                <DialogContentText id="alert-dialog-description">
+                  If you find any bug or you want to suggest any upgrade feel
+                  free to contact dev by going to /dev route. Thanks
+                </DialogContentText>
+              </DialogContent>
+              <DialogActions>
+                <Button onClick={handlediaogueClose}>Ok</Button>
+              </DialogActions>
+            </Dialog>
             <div className="adminloginheader">
               <Box>
                 <Tooltip>
