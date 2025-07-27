@@ -1,6 +1,6 @@
 # RabbitDash
 
-**RabbitDash** is a fast, modern, and user-friendly **frontend admin dashboard** designed for managing e-commerce stores. Built entirely with **React.js**, **Vite**, and **Material UI**, it enables store owners to add, update, and manage products, categories, orders, and more — all from a clean and responsive interface.
+**RabbitDash** is a sleek, modern, and fast frontend admin dashboard for E-commerce built with React.js, Vite, and Material UI. It’s designed to be easily integrated with any backend or headless CMS, making it a flexible choice for managing e-commerce data like products, categories, and orders..
 
 > ⚠️ This is a frontend-only project. You can connect it to any backend or headless CMS of your choice.
 
@@ -17,6 +17,11 @@
 - 🛠️ Easy to extend and integrate with any API
 
 ---
+
+## Demo
+
+![20250727-0829-54 6931712-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/4634fd67-f2bf-43f2-ab84-d96f4ec65306)
+
 
 ## 🛠 Tech Stack
 
