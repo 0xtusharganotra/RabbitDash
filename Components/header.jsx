@@ -47,7 +47,7 @@ function Header() {
       <div className=" container  ">
         <div className="headercontainer">
           <div className=" logocontainer">
-            <Link to="/">
+            <Link to="/dashboard">
               {/* <img src={logo} alt="" className="logo" /> */}
               <img src={rabbitdash} alt="" />
             </Link>
@@ -132,7 +132,12 @@ function Header() {
               >
                 <MenuItem onClick={handleClose}>
                   <Button style={{ fontSize: "14px", color: "black" }}>
-                    SignOut
+                    <Link
+                      to="/"
+                      style={{ textDecoration: "none", color: "black" }}
+                    >
+                      SignOut
+                    </Link>
                   </Button>
                 </MenuItem>
                 <MenuItem onClick={handleClose}>

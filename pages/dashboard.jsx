@@ -1,7 +1,15 @@
 import Sidebar from "../Components/Sidebar";
 import Rightdashboardcontent from "../Components/Rightdashboardcontent";
+import { Mycontext } from "../src/App";
+import { useEffect, useContext } from "react";
 
 function Dashboard() {
+  const { islogin, setislogin } = useContext(Mycontext);
+
+  useEffect(() => {
+    setislogin(false);
+  }, []);
+
   return (
     <div className="dashboardcontainer container">
       <div className="row w-100">
