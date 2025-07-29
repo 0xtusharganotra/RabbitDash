@@ -8,15 +8,28 @@ import "./App.css";
 import Redirecttogithub from "../Components/Redirecttogithub";
 import { useContext, createContext } from "react";
 import Login from "../pages/LOGIN.JSX";
+import ProductDetails from "../pages/productdetails";
 
 export const Mycontext = createContext();
 
 function App() {
   const [islogin, setislogin] = useState(false);
+  const [rightsidecomponent, setrightsidecomponent] = useState([
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+  ]);
 
   const values = {
     islogin,
     setislogin,
+    rightsidecomponent,
+    setrightsidecomponent,
   };
 
   return (

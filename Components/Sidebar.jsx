@@ -9,9 +9,25 @@ import { Link } from "react-router-dom";
 import { FaTasks } from "react-icons/fa";
 import Button from "@mui/material/Button";
 import { MdSpaceDashboard } from "react-icons/md";
+import { useContext } from "react";
+import { Mycontext } from "../src/App";
 
 function Sidebar() {
+  const { rightsidecomponent, setrightsidecomponent } = useContext(Mycontext);
+
   const [isopen, setisopen] = useState([false, false, false]);
+
+  function renderrightcomponent(props) {
+    const newarr = [...rightsidecomponent];
+
+    for (let i = 0; i < newarr.length; i++) {
+      newarr[i] = false;
+    }
+
+    newarr[props] = true;
+
+    setrightsidecomponent(newarr);
+  }
 
   function openclose(index) {
     const newarr = [...isopen];
@@ -23,15 +39,15 @@ function Sidebar() {
     <div className="sidebar">
       <ul>
         <li>
-          <Link to="/" className="w-100">
-            <Button className="w-100">
-              <span className="icon">
-                <MdSpaceDashboard />
-              </span>
-              Dasboard
-              <span className="arrow"></span>
-            </Button>
-          </Link>
+          <Button className="w-100">
+            <span className="icon">
+              <MdSpaceDashboard />
+            </span>
+            <Link to="/dashboard" onClick={() => renderrightcomponent(0)}>
+              Dashboard
+            </Link>
+            <span className="arrow"></span>
+          </Button>
         </li>
 
         <li>
@@ -47,16 +63,24 @@ function Sidebar() {
           <div className={isopen[0] ? "active" : "close"}>
             <ul className="submenu">
               <li>
-                <Link to="">All Products</Link>
+                <Link onClick={() => renderrightcomponent(1)}>
+                  All Products
+                </Link>
               </li>
               <li>
-                <Link to="">Create</Link>
+                <Link to="/dashboard" onClick={() => renderrightcomponent(0)}>
+                  Create
+                </Link>
               </li>
               <li>
-                <Link to="">Update</Link>
+                <Link to="/dashboard" onClick={() => renderrightcomponent(0)}>
+                  Update
+                </Link>
               </li>
               <li>
-                <Link to="">Delete</Link>
+                <Link to="/dashboard" onClick={() => renderrightcomponent(0)}>
+                  Delete
+                </Link>
               </li>
             </ul>
           </div>
@@ -75,7 +99,9 @@ function Sidebar() {
           <div className={isopen[1] ? "active" : "close"}>
             <ul className="submenu">
               <li>
-                <Link to="">All Orders</Link>
+                <Link to="/dashboard" onClick={() => renderrightcomponent(5)}>
+                  All Orders
+                </Link>
               </li>
             </ul>
           </div>
@@ -94,7 +120,9 @@ function Sidebar() {
           <div className={isopen[2] ? "active" : "close"}>
             <ul className="submenu">
               <li>
-                <Link to="">All Users</Link>
+                <Link to="/dashboard" onClick={() => renderrightcomponent(6)}>
+                  All Users
+                </Link>
               </li>
             </ul>
           </div>
@@ -104,7 +132,9 @@ function Sidebar() {
             <span className="icon">
               <FaTasks />
             </span>
-            Daily Task
+            <Link to="/dashboard" onClick={() => renderrightcomponent(7)}>
+              Task Board
+            </Link>
             <span className="arrow"></span>
           </Button>
         </li>

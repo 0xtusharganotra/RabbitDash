@@ -1,10 +1,15 @@
 import Sidebar from "../Components/Sidebar";
 import Rightdashboardcontent from "../Components/Rightdashboardcontent";
+import ProductDetails from "./productdetails";
 import { Mycontext } from "../src/App";
+import DailyTask from "./DailyTask";
 import { useEffect, useContext } from "react";
+import UserDetails from "./UserDetails";
+import OrderDetails from "./Orderdetails";
 
 function Dashboard() {
-  const { islogin, setislogin } = useContext(Mycontext);
+  const { islogin, setislogin, rightsidecomponent, setrightsidecomponent } =
+    useContext(Mycontext);
 
   useEffect(() => {
     setislogin(false);
@@ -34,7 +39,14 @@ function Dashboard() {
             borderRadius: "10px",
           }}
         >
-          <Rightdashboardcontent />
+          {rightsidecomponent[0] && <Rightdashboardcontent />}
+          {rightsidecomponent[1] && <ProductDetails />}
+          {rightsidecomponent[2] && <Rightdashboardcontent />}
+          {rightsidecomponent[3] && <Rightdashboardcontent />}
+          {rightsidecomponent[4] && <Rightdashboardcontent />}
+          {rightsidecomponent[5] && <OrderDetails />}
+          {rightsidecomponent[6] && <UserDetails />}
+          {rightsidecomponent[7] && <DailyTask />}
         </div>
       </div>
     </div>

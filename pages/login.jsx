@@ -21,7 +21,7 @@ function Login() {
           </Link>
 
           <div className="adminemail">
-            <input type="text" placeholder="Enter Email Address" />
+            <input type="text" placeholder="Enter Email Address" autoFocus />
           </div>
 
           <div className="adminemail">
