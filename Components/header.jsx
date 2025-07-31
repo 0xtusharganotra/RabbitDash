@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import rabbitdash from "../src/assets/killo-removebg-preview.png";
+import rabbitdash from "../src/assets/d66278bc50feea307ba525f2d853ece6.png";
 import { FaRegUser } from "react-icons/fa";
 import Button from "@mui/material/Button";
 import { MdMenuOpen } from "react-icons/md";
@@ -56,7 +56,7 @@ function Header() {
           <div className=" logocontainer">
             <Link to="/dashboard">
               {/* <img src={logo} alt="" className="logo" /> */}
-              <img src={rabbitdash} style={{ width: "120px" }} alt="" />
+              <img src={rabbitdash} alt="" />
             </Link>
             <Button className="circle" onClick={() => clicktohidesidebar()}>
               <MdMenuOpen />
