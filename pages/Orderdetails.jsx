@@ -1,5 +1,6 @@
 import Searchbox from "../Components/searchbox";
 import ProductTable from "../Components/ProductTable";
+import OrderTable from "../Components/OrderTable";
 
 function OrderDetails() {
   return (
@@ -14,9 +15,9 @@ function OrderDetails() {
             <div className="dashbox">Total Orders: 0</div>
           </div>
           <div className="allproducts">
-            <Searchbox text="Search Users by User Id" />
+            <Searchbox text="Search Orders by Order Id" />
 
-            <ProductTable />
+            <OrderTable />
           </div>
         </div>
       </div>

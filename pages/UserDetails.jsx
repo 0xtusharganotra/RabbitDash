@@ -1,5 +1,5 @@
 import Searchbox from "../Components/searchbox";
-import ProductTable from "../Components/ProductTable";
+import UserTable from "../Components/UserTable";
 
 function UserDetails() {
   return (
@@ -16,7 +16,7 @@ function UserDetails() {
           <div className="allproducts">
             <Searchbox text="Search Users by User Id" />
 
-            <ProductTable />
+            <UserTable />
           </div>
         </div>
       </div>

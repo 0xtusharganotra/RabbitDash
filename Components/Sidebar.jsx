@@ -11,9 +11,15 @@ import Button from "@mui/material/Button";
 import { MdSpaceDashboard } from "react-icons/md";
 import { useContext } from "react";
 import { Mycontext } from "../src/App";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
 
 function Sidebar() {
-  const { rightsidecomponent, setrightsidecomponent } = useContext(Mycontext);
+  const {
+    rightsidecomponent,
+    setrightsidecomponent,
+    hidesidebar,
+    sethidesidebar,
+  } = useContext(Mycontext);
 
   const [isopen, setisopen] = useState([false, false, false]);
 
@@ -36,7 +42,7 @@ function Sidebar() {
     setisopen(newarr);
   }
   return (
-    <div className="sidebar">
+    <div className={hidesidebar ? "sidebar" : "nosidebar"}>
       <ul>
         <li>
           <Button className="w-100">
@@ -46,7 +52,9 @@ function Sidebar() {
             <Link to="/dashboard" onClick={() => renderrightcomponent(0)}>
               Dashboard
             </Link>
-            <span className="arrow"></span>
+            <span className="arrow" onClick={() => sethidesidebar(false)}>
+              <FaArrowAltCircleLeft />
+            </span>
           </Button>
         </li>
 
@@ -68,17 +76,17 @@ function Sidebar() {
                 </Link>
               </li>
               <li>
-                <Link to="/dashboard" onClick={() => renderrightcomponent(0)}>
+                <Link to="/dashboard" onClick={() => renderrightcomponent(2)}>
                   Create
                 </Link>
               </li>
               <li>
-                <Link to="/dashboard" onClick={() => renderrightcomponent(0)}>
+                <Link to="/dashboard" onClick={() => renderrightcomponent(3)}>
                   Update
                 </Link>
               </li>
               <li>
-                <Link to="/dashboard" onClick={() => renderrightcomponent(0)}>
+                <Link to="/dashboard" onClick={() => renderrightcomponent(4)}>
                   Delete
                 </Link>
               </li>

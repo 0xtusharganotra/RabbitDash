@@ -14,6 +14,7 @@ export const Mycontext = createContext();
 
 function App() {
   const [islogin, setislogin] = useState(false);
+  const [hidesidebar, sethidesidebar] = useState(true);
   const [rightsidecomponent, setrightsidecomponent] = useState([
     true,
     false,
@@ -30,6 +31,8 @@ function App() {
     setislogin,
     rightsidecomponent,
     setrightsidecomponent,
+    hidesidebar,
+    sethidesidebar,
   };
 
   return (

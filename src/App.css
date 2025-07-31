@@ -51,6 +51,7 @@ header {
   padding-left: 5px;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .circle svg {
@@ -115,6 +116,60 @@ header {
   padding: 10px;
   height: calc(100vh - 100px);
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+.nosidebar {
+  display: none;
+}
+
+@media (max-width: 1070px) {
+  .sidebarContainer {
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    width: 180px !important; /* Add !important to override other styles */
+  }
+  .rightdashboardcontainer {
+    display: block;
+    width: calc(100% - 300px);
+    max-width: 100%;
+    flex: 1;
+  }
+
+  .matrix {
+    flex-direction: column;
+  }
+  .matrix .matrix-left {
+    width: 100%;
+  }
+  .matrix .matrix-right {
+    width: 100%;
+  }
+  .search {
+    width: 70%;
+  }
+  .searchbox {
+    width: 60%;
+  }
+}
+
+.sidebarContainer {
+  width: 20%;
+  max-width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 10px;
+}
+.nosidebar {
+  width: 0%;
+  display: none;
+}
+
+.rightdashboardcontainer {
+  width: 80%;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
 }
 
 .rightdashboardarea {

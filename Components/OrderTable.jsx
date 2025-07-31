@@ -6,7 +6,7 @@ function OrderTable() {
           <thead className="thead-dark">
             <tr>
               <th style={{ width: "10%" }}>Order ID</th>
-              <th style={{ width: "17%" }}>Product</th>
+              <th style={{ width: "17%" }}>Product Id</th>
               <th style={{ width: "6%" }}>Qty</th>
               <th style={{ width: "10%" }}>Price</th>
               <th style={{ width: "10%" }}>Total</th>
@@ -18,33 +18,12 @@ function OrderTable() {
           <tbody>
             <tr>
               <td>1071056</td>
-              <td>
-                <div className="ordertableproductdetails">
-                  <div>
-                    <img
-                      src="https://s7ap1.scene7.com/is/image/itcportalprod/aashirvaad%20chakki?fmt=webp-alpha"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <p
-                      style={{
-                        maxWidth: "100px",
-                        overflow: "hidden",
-                        whiteSpace: "nowrap",
-                        textOverflow: "ellipsis",
-                      }}
-                    >
-                      Ashrivaad Atta Ashrivaad Atta Ashrivaad Atta
-                    </p>
-                    <p>Category</p>
-                  </div>
-                </div>
-              </td>
+
+              <td>100067</td>
               <td>1</td>
-              <td>100</td>
-              <td>100</td>
-              <td>HarshRana</td>
+              <td>977</td>
+              <td>977</td>
+              <td>Harsh Rana</td>
               <td>
                 Up India Up India Up India Up India Up India Up India Up India
               </td>
@@ -52,33 +31,12 @@ function OrderTable() {
             </tr>
             <tr>
               <td>1071056</td>
-              <td>
-                <div className="ordertableproductdetails">
-                  <div>
-                    <img
-                      src="https://s7ap1.scene7.com/is/image/itcportalprod/aashirvaad%20chakki?fmt=webp-alpha"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <p
-                      style={{
-                        maxWidth: "100px",
-                        overflow: "hidden",
-                        whiteSpace: "nowrap",
-                        textOverflow: "ellipsis",
-                      }}
-                    >
-                      Ashrivaad Atta Ashrivaad Atta Ashrivaad Atta
-                    </p>
-                    <p>Category</p>
-                  </div>
-                </div>
-              </td>
+
+              <td>100067</td>
               <td>1</td>
-              <td>100</td>
-              <td>100</td>
-              <td>HarshRana</td>
+              <td>977</td>
+              <td>977</td>
+              <td>Harsh Rana</td>
               <td>
                 Up India Up India Up India Up India Up India Up India Up India
               </td>
@@ -86,33 +44,12 @@ function OrderTable() {
             </tr>
             <tr>
               <td>1071056</td>
-              <td>
-                <div className="ordertableproductdetails">
-                  <div>
-                    <img
-                      src="https://s7ap1.scene7.com/is/image/itcportalprod/aashirvaad%20chakki?fmt=webp-alpha"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <p
-                      style={{
-                        maxWidth: "100px",
-                        overflow: "hidden",
-                        whiteSpace: "nowrap",
-                        textOverflow: "ellipsis",
-                      }}
-                    >
-                      Ashrivaad Atta Ashrivaad Atta Ashrivaad Atta
-                    </p>
-                    <p>Category</p>
-                  </div>
-                </div>
-              </td>
+
+              <td>100067</td>
               <td>1</td>
-              <td>100</td>
-              <td>100</td>
-              <td>HarshRana</td>
+              <td>977</td>
+              <td>977</td>
+              <td>Harsh Rana</td>
               <td>
                 Up India Up India Up India Up India Up India Up India Up India
               </td>
@@ -120,33 +57,12 @@ function OrderTable() {
             </tr>
             <tr>
               <td>1071056</td>
-              <td>
-                <div className="ordertableproductdetails">
-                  <div>
-                    <img
-                      src="https://s7ap1.scene7.com/is/image/itcportalprod/aashirvaad%20chakki?fmt=webp-alpha"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <p
-                      style={{
-                        maxWidth: "100px",
-                        overflow: "hidden",
-                        whiteSpace: "nowrap",
-                        textOverflow: "ellipsis",
-                      }}
-                    >
-                      Ashrivaad Atta Ashrivaad Atta Ashrivaad Atta
-                    </p>
-                    <p>Category</p>
-                  </div>
-                </div>
-              </td>
+
+              <td>100067</td>
               <td>1</td>
-              <td>100</td>
-              <td>100</td>
-              <td>HarshRana</td>
+              <td>977</td>
+              <td>977</td>
+              <td>Harsh Rana</td>
               <td>
                 Up India Up India Up India Up India Up India Up India Up India
               </td>
@@ -154,33 +70,77 @@ function OrderTable() {
             </tr>
             <tr>
               <td>1071056</td>
-              <td>
-                <div className="ordertableproductdetails">
-                  <div>
-                    <img
-                      src="https://s7ap1.scene7.com/is/image/itcportalprod/aashirvaad%20chakki?fmt=webp-alpha"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <p
-                      style={{
-                        maxWidth: "100px",
-                        overflow: "hidden",
-                        whiteSpace: "nowrap",
-                        textOverflow: "ellipsis",
-                      }}
-                    >
-                      Ashrivaad Atta Ashrivaad Atta Ashrivaad Atta
-                    </p>
-                    <p>Category</p>
-                  </div>
-                </div>
-              </td>
+
+              <td>100067</td>
               <td>1</td>
-              <td>100</td>
-              <td>100</td>
-              <td>HarshRana</td>
+              <td>977</td>
+              <td>977</td>
+              <td>Harsh Rana</td>
+              <td>
+                Up India Up India Up India Up India Up India Up India Up India
+              </td>
+              <td>Cash</td>
+            </tr>
+            <tr>
+              <td>1071056</td>
+
+              <td>100067</td>
+              <td>1</td>
+              <td>977</td>
+              <td>977</td>
+              <td>Harsh Rana</td>
+              <td>
+                Up India Up India Up India Up India Up India Up India Up India
+              </td>
+              <td>Cash</td>
+            </tr>
+            <tr>
+              <td>1071056</td>
+
+              <td>100067</td>
+              <td>1</td>
+              <td>977</td>
+              <td>977</td>
+              <td>Harsh Rana</td>
+              <td>
+                Up India Up India Up India Up India Up India Up India Up India
+              </td>
+              <td>Cash</td>
+            </tr>
+            <tr>
+              <td>1071056</td>
+
+              <td>100067</td>
+              <td>1</td>
+              <td>977</td>
+              <td>977</td>
+              <td>Harsh Rana</td>
+              <td>
+                Up India Up India Up India Up India Up India Up India Up India
+              </td>
+              <td>Cash</td>
+            </tr>
+            <tr>
+              <td>1071056</td>
+
+              <td>100067</td>
+              <td>1</td>
+              <td>977</td>
+              <td>977</td>
+              <td>Harsh Rana</td>
+              <td>
+                Up India Up India Up India Up India Up India Up India Up India
+              </td>
+              <td>Cash</td>
+            </tr>
+            <tr>
+              <td>1071056</td>
+
+              <td>100067</td>
+              <td>1</td>
+              <td>977</td>
+              <td>977</td>
+              <td>Harsh Rana</td>
               <td>
                 Up India Up India Up India Up India Up India Up India Up India
               </td>

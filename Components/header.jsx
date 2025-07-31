@@ -22,8 +22,11 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+import { Mycontext } from "../src/App";
+import { useContext } from "react";
 
 function Header() {
+  const { hidesidebar, sethidesidebar } = useContext(Mycontext);
   const [dialogueopen, setdialogueopen] = React.useState(false);
 
   const handledialogueClickOpen = () => {
@@ -42,6 +45,10 @@ function Header() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  function clicktohidesidebar() {
+    sethidesidebar(!hidesidebar);
+  }
   return (
     <header>
       <div className=" container  ">
@@ -51,7 +58,7 @@ function Header() {
               {/* <img src={logo} alt="" className="logo" /> */}
               <img src={rabbitdash} alt="" />
             </Link>
-            <Button className="circle">
+            <Button className="circle" onClick={() => clicktohidesidebar()}>
               <MdMenuOpen />
             </Button>
           </div>
