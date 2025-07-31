@@ -288,12 +288,12 @@ header {
   border-radius: 10px;
 
   margin: 10px 0px;
-  background: #182b63;
+  background: #631818;
   background: linear-gradient(
     90deg,
-    rgba(24, 43, 99, 1) 0%,
-    rgba(0, 92, 179, 1) 45%,
-    rgba(0, 212, 255, 1) 100%
+    rgb(99, 24, 24) 0%,
+    rgb(179, 0, 0) 45%,
+    rgb(255, 0, 0) 100%
   );
   color: white;
   display: flex;
@@ -308,9 +308,9 @@ header {
 .dashbox:hover {
   background: linear-gradient(
     90deg,
-    rgba(24, 43, 99, 1) 10%,
-    rgba(0, 92, 179, 1) 55%,
-    rgba(0, 212, 255, 1) 100%
+    rgb(99, 24, 24) 0%,
+    rgb(179, 0, 0) 45%,
+    rgb(255, 0, 0) 100%
   );
 }
 
@@ -323,9 +323,9 @@ header {
   background: #182b63;
   background: linear-gradient(
     90deg,
-    rgba(24, 43, 99, 1) 0%,
-    rgba(0, 92, 179, 1) 45%,
-    rgba(0, 212, 255, 1) 100%
+    rgb(99, 24, 24) 0%,
+    rgb(179, 0, 0) 45%,
+    rgb(255, 0, 0) 100%
   );
   padding-left: 30px;
   padding-top: 30px;
@@ -340,9 +340,9 @@ header {
 .dashchart:hover {
   background: linear-gradient(
     90deg,
-    rgba(24, 43, 99, 1) 10%,
-    rgba(0, 92, 179, 1) 55%,
-    rgba(0, 212, 255, 1) 100%
+    rgb(99, 24, 24) 0%,
+    rgb(179, 0, 0) 45%,
+    rgb(255, 0, 0) 100%
   );
 }
 
@@ -356,11 +356,7 @@ table {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 table .thead-dark th {
-  background: linear-gradient(
-    90deg,
-    rgba(24, 43, 99, 1) 35%,
-    rgba(0, 92, 179, 1) 75%
-  );
+  background: linear-gradient(90deg, rgb(99, 24, 24) 35%, rgb(179, 0, 0) 75%);
   color: white;
   text-align: center;
 }
@@ -449,11 +445,7 @@ p {
 
 .Loginbutton {
   color: white !important;
-  background: linear-gradient(
-    90deg,
-    rgba(24, 43, 99, 1) 25%,
-    rgba(0, 92, 179, 1) 100%
-  );
+  background: linear-gradient(90deg, rgb(99, 24, 24) 25%, rgb(179, 0, 0) 100%);
   max-width: 100% !important;
   width: 100% !important;
 
