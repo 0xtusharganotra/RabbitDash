@@ -20,16 +20,19 @@
 
 ## Demo
 
-![20250727-0829-54 6931712-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/4634fd67-f2bf-43f2-ab84-d96f4ec65306)
+https://rabbit-dash.vercel.app/
 
+> No need to enter password or Id just click on Log In
+
+![20250727-0829-54 6931712-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/4634fd67-f2bf-43f2-ab84-d96f4ec65306)
 
 ## 🛠 Tech Stack
 
-| Technology     | Description                              |
-|----------------|------------------------------------------|
-| **React.js**   | Library for building user interfaces     |
-| **Vite**       | Fast frontend tooling & dev server       |
-| **Material UI**| Elegant and accessible UI component kit  |
+| Technology      | Description                             |
+| --------------- | --------------------------------------- |
+| **React.js**    | Library for building user interfaces    |
+| **Vite**        | Fast frontend tooling & dev server      |
+| **Material UI** | Elegant and accessible UI component kit |
 
 ---
 
@@ -55,6 +58,7 @@ npm install
 yarn install
 
 ```
+
 ### Run the Dev Server
 
 ```bash
@@ -65,8 +69,10 @@ yarn dev
 ```
 
 #### 🙌 Contributing
+
 Contributions and feedback are welcome!
 Please open an issue or submit a pull request for improvements, bug fixes, or new features.
 
 #### 📃 License
+
 This project is licensed under the MIT License.
