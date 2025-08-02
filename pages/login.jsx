@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 
+import rabbitdash from "../src/assets/d66278bc50feea307ba525f2d853ece6.png";
+
 function Login() {
   const navigate = useNavigate();
   const { islogin, setislogin } = useContext(Mycontext);
@@ -17,7 +19,7 @@ function Login() {
       <div className="loginsection ">
         <div className="loginform">
           <Link to="https://www.kilograms.in" className="mb-3">
-            <img src="src\assets\d66278bc50feea307ba525f2d853ece6.png" alt="" />
+            <img src={rabbitdash} alt="" />
           </Link>
 
           <div className="adminemail">
