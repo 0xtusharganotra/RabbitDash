@@ -7,7 +7,7 @@ import { useState } from "react";
 import "./App.css";
 import Redirecttogithub from "../Components/Redirecttogithub";
 import { useContext, createContext } from "react";
-import Login from "../pages/LOGIN.JSX";
+import Login from "../pages/login.jsx";
 import ProductDetails from "../pages/productdetails";
 
 export const Mycontext = createContext();
