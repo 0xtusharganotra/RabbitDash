@@ -466,3 +466,61 @@ a {
   gap: 20px;
   padding: 10px;
 }
+
+.pinfo {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  height: 100%;
+  padding: 20px;
+}
+
+.basicinfo {
+  padding: 10px;
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  min-height: 700px;
+}
+
+.basicinfo Button {
+  color: white !important;
+  background: linear-gradient(
+    90deg,
+    rgb(24, 25, 99) 25%,
+    rgb(0, 78, 179) 100%
+  ) !important;
+  border-radius: 20px !important;
+  margin-top: 10px;
+}
+
+.preview {
+  padding: 10px;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 7px;
+  width: 40%;
+  max-height: 700px;
+  height: auto;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (width < 750px) {
+  .pinfo {
+    display: block;
+    gap: 20px;
+  }
+  .preview {
+    width: 100%;
+  }
+  .basicinfo {
+    width: 100%;
+  }
+}
+
+@media (height <800px) {
+  .rabbitgif {
+    display: none;
+  }
+}

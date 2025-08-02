@@ -148,6 +148,7 @@ function Sidebar() {
         </li>
       </ul>
       <div
+        className="rabbitgif"
         style={{
           position: "absolute",
           bottom: "5px",

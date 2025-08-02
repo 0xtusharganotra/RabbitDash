@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 function UpdateProduct() {
   return (
     <div className="rightdashboardarea">
@@ -6,7 +7,145 @@ function UpdateProduct() {
       </div>
 
       <div className="dashboardcontent">
-        <div></div>
+        <div className="w-100 pinfo">
+          <div className="basicinfo">
+            <div className="W-100 d-flex">
+              <h5>Product Id : </h5>
+              <input
+                type="text"
+                placeholder="Enter Product Id"
+                style={{
+                  paddinLeft: "15px",
+                  marginLeft: "5px",
+                  outline: "none",
+                  border: "none",
+                  borderBottom: "1px solid black",
+                }}
+              />
+            </div>
+            <div className="W-100 d-flex">
+              <h5>Product Name : </h5>
+              <input
+                type="text"
+                placeholder="Enter Name"
+                style={{
+                  paddinLeft: "15px",
+                  marginLeft: "5px",
+                  outline: "none",
+                  border: "none",
+                  borderBottom: "1px solid black",
+                }}
+              />
+            </div>
+            <div className="W-100 ">
+              <h5>Product Description : </h5>
+              <textarea
+                name="Enter product description"
+                style={{ width: "350px", outline: "none" }}
+                placeholder="Enter product description"
+                id=""
+              ></textarea>
+            </div>
+
+            <div className="W-100 d-flex">
+              <h5>Price : </h5>
+              <input
+                type="text"
+                placeholder="Enter Price"
+                style={{
+                  paddinLeft: "15px",
+                  marginLeft: "5px",
+                  outline: "none",
+                  border: "none",
+                  borderBottom: "1px solid black",
+                }}
+              />
+            </div>
+
+            <div className="W-100 d-flex">
+              <h5>Brand : </h5>
+              <input
+                type="text"
+                placeholder="Enter Brand"
+                style={{
+                  paddinLeft: "15px",
+                  marginLeft: "5px",
+                  outline: "none",
+                  border: "none",
+                  borderBottom: "1px solid black",
+                }}
+              />
+            </div>
+
+            <div className="W-100 d-flex">
+              <h5 for="category">Category : </h5>
+
+              <select id="category" name="category">
+                <option value="Beverage">Beverage</option>
+                <option value="Dairy Products ">Dairy Products</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Fruits">Fruits</option>
+                <option value="Grocery">Grocery</option>
+                <option value="Personal Care">Personal Care</option>
+                <option value="Stationary">Stationary</option>
+                <option value="Hosehold">Hosehold</option>
+              </select>
+            </div>
+            <div className="W-100 d-flex">
+              <h5 for="category">In Stock : </h5>
+
+              <select id="category" name="category">
+                <option value="Grocery">True</option>
+                <option value="Daily ">False</option>
+              </select>
+            </div>
+            <div className="W-100 d-flex">
+              <h5>Product Type : </h5>
+              <input
+                type="text"
+                placeholder="Enter Name"
+                style={{
+                  paddinLeft: "15px",
+                  marginLeft: "5px",
+                  outline: "none",
+                  border: "none",
+                  borderBottom: "1px solid black",
+                }}
+              />
+            </div>
+            <div className="W-100 d-flex">
+              <h5>Weight : </h5>
+              <input
+                type="text"
+                placeholder="Enter Name"
+                style={{
+                  paddinLeft: "15px",
+                  marginLeft: "5px",
+                  outline: "none",
+                  border: "none",
+                  borderBottom: "1px solid black",
+                }}
+              />
+            </div>
+            <div className="W-100 d-flex">
+              <h5>Key Features : </h5>
+              <input
+                type="text"
+                placeholder="Enter Name"
+                style={{
+                  paddinLeft: "15px",
+                  marginLeft: "5px",
+                  outline: "none",
+                  border: "none",
+                  borderBottom: "1px solid black",
+                }}
+              />
+            </div>
+            <Button>Update Product</Button>
+          </div>
+          <div className="preview"></div>
+        </div>
       </div>
     </div>
   );

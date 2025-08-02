@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import rabbitdash from "../src/assets/d66278bc50feea307ba525f2d853ece6.png";
+import rabbitdashsm from "../src/assets/rabbitdash-logo.jpg";
 import { FaRegUser } from "react-icons/fa";
 import Button from "@mui/material/Button";
 import { MdMenuOpen } from "react-icons/md";
@@ -24,6 +25,7 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import { Mycontext } from "../src/App";
 import { useContext } from "react";
+import useWidth from "../hook/useWidth";
 
 function Header() {
   const { hidesidebar, sethidesidebar } = useContext(Mycontext);
@@ -46,6 +48,8 @@ function Header() {
     setAnchorEl(null);
   };
 
+  const width = useWidth();
+
   function clicktohidesidebar() {
     sethidesidebar(!hidesidebar);
   }
@@ -56,7 +60,11 @@ function Header() {
           <div className=" logocontainer">
             <Link to="/dashboard">
               {/* <img src={logo} alt="" className="logo" /> */}
-              <img src={rabbitdash} alt="" />
+              {width > 550 ? (
+                <img src={rabbitdash} alt="" />
+              ) : (
+                <img src={rabbitdashsm} style={{ width: "50px" }} alt="" />
+              )}
             </Link>
             <Button className="circle" onClick={() => clicktohidesidebar()}>
               <MdMenuOpen />
