@@ -40,7 +40,7 @@ const initialData = {
       description:
         "Complete the drag-and-drop functionality for tasks within and between columns using @hello-pangea/dnd.",
       priority: "High",
-      assignee: "Harsh Rana",
+      assignee: "Tushar Ganotra",
       dueDate: "2025-08-01",
       status: "to-do",
     },
@@ -50,7 +50,7 @@ const initialData = {
       description:
         "Finalize the database schema for user authentication and task storage.",
       priority: "High",
-      assignee: "Harsh Rana",
+      assignee: "Tushar Ganotra",
       dueDate: "2025-08-05",
       status: "to-do",
     },
@@ -59,7 +59,7 @@ const initialData = {
       title: "Set up Project Environment",
       description: "Configure React, Node.js, and database connections.",
       priority: "Medium",
-      assignee: "Harsh Rana",
+      assignee: "Tushar Ganotra",
       dueDate: "2025-07-28",
       status: "in-progress",
     },
@@ -69,7 +69,7 @@ const initialData = {
       description:
         "Create RESTful API endpoints for task creation, retrieval, update, and deletion.",
       priority: "High",
-      assignee: "Harsh Rana",
+      assignee: "Tushar Ganotra",
       dueDate: "2025-08-10",
       status: "in-progress",
     },
@@ -79,7 +79,7 @@ const initialData = {
       description:
         "Develop comprehensive unit tests for all backend and frontend components.",
       priority: "Medium",
-      assignee: "Harsh Rana",
+      assignee: "Tushar Ganotra",
       dueDate: "2025-08-15",
       status: "done",
     },
@@ -89,7 +89,7 @@ const initialData = {
       description:
         "Create user manuals and developer documentation for the project.",
       priority: "Low",
-      assignee: "Harsh Rana",
+      assignee: "Tushar Ganotra",
       dueDate: "2025-08-20",
       status: "done",
     },

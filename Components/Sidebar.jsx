@@ -12,6 +12,7 @@ import { MdSpaceDashboard } from "react-icons/md";
 import { useContext } from "react";
 import { Mycontext } from "../src/App";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
+import rabbitgif from "../src/assets/TAfT.gif";
 
 function Sidebar() {
   const {
@@ -156,7 +157,7 @@ function Sidebar() {
         }}
       >
         <img
-          src="\src\assets\TAfT.gif"
+          src={rabbitgif}
           alt="Bottom GIF"
           style={{
             maxWidth: "170px",
