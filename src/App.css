@@ -130,7 +130,7 @@ header {
   }
   .rightdashboardcontainer {
     display: block;
-    width: calc(100% - 300px);
+    width: 100%;
     max-width: 100%;
     flex: 1;
   }
@@ -165,7 +165,7 @@ header {
 }
 
 .rightdashboardcontainer {
-  width: 80%;
+  width: 100%;
 
   padding-left: 10px;
   padding-right: 10px;
